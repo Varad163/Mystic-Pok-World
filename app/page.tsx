@@ -6,8 +6,10 @@ import Selection from "@/components/Selection";
 import Battlezone from "@/components/Battlezone";
 import Map from "@/components/map";
 import Endceremony from "@/components/Endceremony";
+import SmoothScrollWrapper from "@/components/scrollwrapper";
 export default function Home() {
   return (
+    <SmoothScrollWrapper>
     <div >
       
      <Navbar  />
@@ -22,5 +24,6 @@ export default function Home() {
       <Endceremony />
 
     </div>
+    </SmoothScrollWrapper >
   );
 }

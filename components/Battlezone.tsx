@@ -3,9 +3,10 @@ import Image from 'next/image';
 import battle from '../images/battle1.jpg';
 import battle3 from '../images/battle3.jpeg';
 import battle4 from '../images/battle4.jpg';
-
+import SmoothScrollWrapper from './scrollwrapper';
 function Battlezone() {
     return (
+        <SmoothScrollWrapper>
         <div className="min-h-screen bg-[#F2F9FF] flex flex-col items-center justify-center px-6 py-12 space-y-16">
             {/* Page Heading */}
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 text-center">
@@ -60,6 +61,7 @@ function Battlezone() {
                 />
             </div>
         </div>
+        </SmoothScrollWrapper>
     );
 }
 

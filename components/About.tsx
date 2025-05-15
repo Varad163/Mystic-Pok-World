@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import ev from "../images/ev.png";
+import SmoothScrollWrapper from "./scrollwrapper";
 
 function About() {
     return (
+        <SmoothScrollWrapper>
         <div className="min-h-screen w-full bg-[#FAF1E6] flex flex-col md:flex-row justify-between items-center px-8 py-16 md:py-24 rounded-xl">
 
             {/* Image Section */}
@@ -17,7 +19,6 @@ function About() {
                 />
             </div>
 
-            {/* Text Content */}
             <div className="max-w-xl text-center md:text-left space-y-6">
                 <h2 className="text-4xl font-bold text-gray-800">
                     Built for Fans, By Fans.
@@ -36,6 +37,7 @@ function About() {
                 </button>
             </div>
         </div>
+        </SmoothScrollWrapper>
     );
 }
 

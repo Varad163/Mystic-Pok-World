@@ -1,12 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import mapp from '../images/Pokemon-Regions.avif';
+import SmoothScrollWrapper from './scrollwrapper';
 
 function MapSection() {
     return (
+        <SmoothScrollWrapper>
+        
+         
         <div className="min-h-screen bg-[#E1F0DA] flex flex-col md:flex-row items-center justify-between px-6 py-12 md:py-20 gap-10">
 
-            {/* Text Section */}
+      
             <div className="md:w-1/2 text-center md:text-left">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     Explore the Pokémon World
@@ -20,7 +24,6 @@ function MapSection() {
                 </p>
             </div>
 
-            {/* Image Section */}
             <div className="md:w-1/2 h-[50vh] relative rounded-lg shadow-lg overflow-hidden">
                 <Image
                     src={mapp}
@@ -31,6 +34,7 @@ function MapSection() {
                 />
             </div>
         </div>
+        </SmoothScrollWrapper>
     );
 }
 

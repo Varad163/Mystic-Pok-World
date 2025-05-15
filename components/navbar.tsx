@@ -21,7 +21,6 @@ const Navbar = () => {
                     </span>
                 </Link>
 
-                {/* Navigation Links */}
                 <div className="space-x-8 hidden md:flex">
                     {["Home", "About", "Products", "Contact"].map((item) => (
                         <Link

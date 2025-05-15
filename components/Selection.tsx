@@ -1,7 +1,8 @@
 import React from 'react';
-
+import SmoothScrollWrapper from './scrollwrapper';
 function Selection() {
     return (
+        <SmoothScrollWrapper>
         <div className="min-h-screen bg-[#F2F9FF] flex flex-col items-center justify-center p-10 rounded-lg">
             <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">
                 Choose Your Champions.
@@ -40,6 +41,7 @@ function Selection() {
                 </a>
             </div>
         </div>
+        </SmoothScrollWrapper>
     );
 }
 
