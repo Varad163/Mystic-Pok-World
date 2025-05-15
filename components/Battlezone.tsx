@@ -22,7 +22,7 @@ function Battlezone() {
 
     useEffect(() => {
         const animate = (
-            ref: React.RefObject<HTMLElement | HTMLImageElement>,
+            ref: React.RefObject<HTMLElement | null>,
             animationProps: gsap.TweenVars
         ) => {
             if (!ref.current) return;
