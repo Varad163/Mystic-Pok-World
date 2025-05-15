@@ -17,7 +17,7 @@ const Navbar = () => {
                         className="w-10 h-10"
                     />
                     <span className="text-3xl font-extrabold tracking-wide text-gray-900 hover:text-black transition duration-200">
-                        Poké<span className="text-red-600">Store</span>
+                        Poké<span className="text-red-600">Venture</span>
                     </span>
                 </Link>
 
