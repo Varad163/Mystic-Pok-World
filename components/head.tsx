@@ -15,24 +15,27 @@ function Head() {
     const imageRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        // Fade in text with opacity from 0 over 3 seconds
+        gsap.fromTo(
+            textRef.current,
+            { opacity: 0 },
+            {
+                opacity: 1,
+                duration: 3,
+                ease: "power1.out",
+                scrollTrigger: {
+                    trigger: textRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                },
+            }
+        );
 
-        gsap.from(textRef.current, {
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-            ease: "power3.out",
-            scrollTrigger: {
-                trigger: textRef.current,
-                start: "top 80%",
-                toggleActions: "play none none none",
-            },
-        });
-
-      
+        // Slide in image from right with fade
         gsap.from(imageRef.current, {
             x: 200,
             opacity: 0,
-            duration: 1.2,
+            duration: 2,
             ease: "power3.out",
             scrollTrigger: {
                 trigger: imageRef.current,
@@ -45,7 +48,6 @@ function Head() {
     return (
         <SmoothScrollWrapper>
             <div className="min-h-screen w-full bg-[#FCF259] flex flex-col md:flex-row justify-between items-center p-8 md:p-16 rounded-xl">
-
                 <div
                     className="max-w-xl text-center md:text-left space-y-6"
                     ref={textRef}
