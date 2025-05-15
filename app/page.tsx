@@ -3,6 +3,7 @@ import Head from "../components/head";
 import Navbar from "@/components/navbar";
 import About from "@/components/About";
 import Selection from "@/components/Selection";
+import Battlezone from "@/components/Battlezone";
 export default function Home() {
   return (
     <div >
@@ -12,7 +13,7 @@ export default function Home() {
      <Head />
      <About />
       <Selection />
-        
+        <Battlezone />
     </div>
   );
 }
