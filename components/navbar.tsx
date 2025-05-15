@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import pokeball from "../public/pokeball.svg"; // Ensure the image is placed in the 'public' directory
+import pokeball from "../public/pokeball.svg"; 
 
 const Navbar = () => {
     return (
         <nav className="bg-[#FCF259] px-4 py-6 shadow-md">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
 
-                {/* Logo / Brand with Pokéball */}
                 <Link href="/" className="flex items-center space-x-3">
                     <Image
                         src={pokeball}
@@ -35,9 +34,8 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                {/* Mobile Menu Placeholder */}
                 <div className="md:hidden">
-                    {/* Future: Hamburger menu */}
+                 
                 </div>
             </div>
         </nav>
